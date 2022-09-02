@@ -95,6 +95,21 @@ a:hover::after {
   transform-origin: left;
   transition-delay: 0.65s;
 }
+.wrapper {
+  perspective: 900px;
+}
+.appear {
+  opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: top center;
+  transform-style: preserve-3d;
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.appear.is-inview {
+  transition-delay: 1s;
+  opacity: 1;
+  transform: none;
+}
 /* Paramètres par ordre d'apparition */
 header {
   height: 100vh;
