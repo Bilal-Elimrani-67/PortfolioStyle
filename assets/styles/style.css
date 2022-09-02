@@ -25,6 +25,21 @@ body {
   color: #fefeff;
   transition: 1.5s ease-in-out;
 }
+.wrapper {
+  perspective: 900px;
+}
+.appear {
+  opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: top center;
+  transform-style: preserve-3d;
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.appear.is-inview {
+  transition-delay: 1s;
+  opacity: 1;
+  transform: none;
+}
 
 h2 {
   font-size: calc(3rem + 5vw);
@@ -92,24 +107,16 @@ a:hover::after {
   margin: 0 auto;
   background: #000101;
   transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
-  transform-origin: left;
-  transition-delay: 0.65s;
-}
-.wrapper {
-  perspective: 900px;
-}
-.appear {
+  /* transform-origin: left; */
+  transition-delay: 0.45s;
   opacity: 0;
-  transform: translateY(100%) rotateX(-80deg);
-  transform-origin: top center;
-  transform-style: preserve-3d;
-  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: scaleX(0);
 }
-.appear.is-inview {
-  transition-delay: 1s;
+.line-wrapper.is-inview .line {
   opacity: 1;
-  transform: none;
+  transform: scaleX(1);
 }
+
 /* Paramètres par ordre d'apparition */
 header {
   height: 100vh;
@@ -119,6 +126,9 @@ header {
 .links {
   display: flex;
   justify-content: space-between;
+}
+#h1-wrapper {
+  transition-delay: 0.3s;
 }
 h1 {
   font-size: calc(1.4rem + 8vw);
@@ -131,6 +141,12 @@ header h2 {
   font-size: calc(1rem + 6.5vw);
   margin: 18px 0;
   text-align: left;
+}
+#h2-1 {
+  transition-delay: 0.9s;
+}
+#h2-2 {
+  transition-delay: 1.2s;
 }
 .scroll-wrapper {
   position: absolute;
@@ -170,6 +186,7 @@ header h2 {
 }
 .skills .appear {
   text-align: center;
+  transition-delay: 0.6s;
 }
 .skills p {
   font-size: calc(1rem + 6vw);
@@ -192,9 +209,19 @@ header h2 {
   max-width: 600px;
   margin: 50px 5vw;
 }
-/* #p1 {
-  margin-left: 8vw;
-} */
+.project::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 100%;
+  top: -3px;
+  background: #fefeff;
+  transition: width 1s ease-out;
+  transition-delay: 0.85s;
+}
+.project.is-inview::before {
+  width: 0;
+}
 #p2 {
   margin: 0 6vw 0 auto;
 }
