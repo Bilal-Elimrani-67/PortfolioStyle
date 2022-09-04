@@ -13,16 +13,16 @@
   margin: 0;
 }
 *::selection {
-  background: #d2d2eb;
-  color: #f0eee9;
+  background: #9d8df1;
+  color: #fefeff;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: "font-reg", serif;
-  background: #d2d2eb;
-  color: #f0eee9;
+  background: #9d8df1;
+  color: #fefeff;
   transition: 0.7s ease-in-out;
 }
 .wrapper {
@@ -89,7 +89,7 @@ a:hover::after {
   }
 }
 .img {
-  height: 1000px;
+  height: 395px;
   width: 100vw;
   max-width: 395px;
   margin: 0 auto;
@@ -157,7 +157,8 @@ header h2 {
   margin: 400px 0 250px;
 }
 .img1 {
-  background: url(../img/bill-gates-1.jpg) top/cover;
+  background: url(../img/avatar.png) top/cover;
+  border-radius: 20%;
 }
 .h2-wrapper {
   mix-blend-mode: exclusion;
@@ -202,8 +203,8 @@ header h2 {
 }
 .project {
   position: relative;
-  width: 70vw;
-  max-width: 900px;
+  width: 60vw;
+  max-width: 600px;
   margin: 50px 5vw;
 }
 .project::before {
@@ -212,7 +213,7 @@ header h2 {
   height: 110%;
   width: 100%;
   top: -3px;
-  background: #d2d2eb;
+  background: #fefeff;
   transition: width 1s ease-out;
   transition-delay: 0.85s;
 }
@@ -252,8 +253,6 @@ header h2 {
   margin-top: 1.5vw;
   color: #fefeff;
 }
-
-/* FOOTER */
 footer {
   margin: 150px 0 120px;
 }
@@ -273,7 +272,6 @@ footer a {
   color: #000101;
   font-size: calc(1rem + 2vw);
 }
-
 #cv {
   position: relative;
   width: 60vw;

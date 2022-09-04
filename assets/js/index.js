@@ -5,13 +5,13 @@ const scroll = new LocomotiveScroll({
   smartphone: { smooth: true },
 });
 
-// BODY COLOR //
+// Body color
 scroll.on("scroll", () => {
   if (document.querySelector("#color.is-inview")) {
-    document.body.style.background = "#c684b5";
-    document.body.style.color = "#D2D2EB";
+    document.body.style.background = "#9d8df1";
+    document.body.style.color = "#fefeff";
   } else {
-    document.body.style.background = "#D2D2EB";
-    document.body.style.color = "#c684b5";
+    document.body.style.background = "#fefeff";
+    document.body.style.color = "#000101";
   }
 });
