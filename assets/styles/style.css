@@ -13,7 +13,7 @@
   margin: 0;
 }
 *::selection {
-  background: #9d8df1;
+  background: #000101;
   color: #fefeff;
 }
 html {
@@ -21,7 +21,7 @@ html {
 }
 body {
   font-family: "font-reg", serif;
-  background: #9d8df1;
+  background: #000101;
   color: #fefeff;
   transition: 0.7s ease-in-out;
 }
@@ -157,8 +157,7 @@ header h2 {
   margin: 400px 0 250px;
 }
 .img1 {
-  background: url(../img/avatar.png) top/cover;
-  border-radius: 20%;
+  background: url(../img/bill-gates-1.jpg) top/cover;
 }
 .h2-wrapper {
   mix-blend-mode: exclusion;
