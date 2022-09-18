@@ -25,6 +25,7 @@ body {
   color: #fefeff;
   transition: 0.7s ease-in-out;
 }
+
 .wrapper {
   perspective: 900px;
 }
@@ -276,4 +277,35 @@ footer a {
   width: 60vw;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .social a {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  transition: 0.1s linear;
+  font-size: calc(0.8rem + 0.8vw);
+}
+footer .social a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: black;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  transform-origin: left;
+}
+footer .social a:hover {
+  transform: scale(1.04);
+  color: rgb(217, 217, 217);
+}
+footer .social a:hover::after {
+  animation: animLink 1.4s infinite ease-in-out;
 }
