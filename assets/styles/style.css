@@ -13,7 +13,7 @@
   margin: 0;
 }
 *::selection {
-  background: #000101;
+  background: #9d8df1;
   color: #fefeff;
 }
 html {
@@ -21,7 +21,7 @@ html {
 }
 body {
   font-family: "font-reg", serif;
-  background: #000101;
+  background: #9d8df1;
   color: #fefeff;
   transition: 0.7s ease-in-out;
 }
@@ -198,9 +198,9 @@ header h2 {
 .portfolio {
   margin: 200px 0;
 }
-.projects-container {
+/* .projects-container {
   margin-top: 100px;
-}
+} */
 .project {
   position: relative;
   width: 60vw;
