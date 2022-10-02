@@ -226,6 +226,9 @@ header h2 {
 #p3 {
   margin-left: 8vw;
 }
+#p4 {
+  margin: 0 6vw 0 auto;
+}
 .project img {
   transition: 0.4s ease-out;
   width: 100%;
