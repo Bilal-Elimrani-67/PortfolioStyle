@@ -285,6 +285,7 @@ footer a {
 .social {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 5px;
 }
 
 footer .social a {
