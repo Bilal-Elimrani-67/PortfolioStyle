@@ -1,4 +1,3 @@
-/* Paramètres généraux */
 @font-face {
   font-family: "font-reg";
   src: url(../fonts/PlayfairDisplay-Regular.ttf);
@@ -158,7 +157,7 @@ header h2 {
   margin: 400px 0 250px;
 }
 .img1 {
-  background: url(../img/moi.JPG) top/cover;
+  background: url(../img/moi.jpg) top/cover;
 }
 .h2-wrapper {
   mix-blend-mode: exclusion;
